@@ -16,6 +16,7 @@ public class Main {
             switch (decide) {
                 case 1 -> addBook();
                 case 2 -> removeBook();
+                //case 3 ->
                 default -> System.out.println("Come on man, there were only 2 choices.");
             }
             System.out.println("The current list of books is: " + listOfBooks);
@@ -40,7 +41,7 @@ public class Main {
         System.out.println("How many books?");
         int bookNumber = names.nextInt();
         while (bookNumber > 0) {
-            System.out.println("What is the title of the book?");
+            System.out.println("What is the title of the book? No spaces");
             book.setBookTitle(names.next());
             System.out.println("Who is the Author?");
             book.setAuthor(names.next());
@@ -52,6 +53,13 @@ public class Main {
         //System.out.println("The current list of books is:" + listOfBooks);
     }
 
+    public static void getBookInfo(){
+        Scanner author = new Scanner(System.in);
+        Book book = new Book();
+        System.out.println("The available list of books are: " + listOfBooks);
+        System.out.println("What book are you wanting information on?");
+        System.out.println(listOfBooks.equals(author.next()));
+    }
 
 }
 

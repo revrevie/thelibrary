@@ -3,6 +3,11 @@ package librarysystem;
 //import static org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
+import java.util.ArrayList;
+
+import java.util.ArrayList;
+import java.util.List;
+
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class test {
@@ -12,7 +17,7 @@ public class test {
     public void testGetBook(){
         Book testBook = new Book();
         testBook.setBookTitle("Harry Potter");
-        assertEquals(testBook.getBookTitle(),"Harry Potter","Did this work?");
+        assertEquals("Harry Potter",testBook.getBookTitle(),"Did this work?");
     }
 
     @Test
@@ -20,7 +25,7 @@ public class test {
     public void testGetAuthor(){
         Book testBook = new Book();
         testBook.setAuthor("J.K. Rowling");
-        assertEquals(testBook.getAuthor(),"J.K. Rowling","this test doesn't show much");
+        assertEquals("J.K. Rowling",testBook.getAuthor(),"this test doesn't show much");
     }
 
     @Test
@@ -28,14 +33,18 @@ public class test {
     public void testGetRefNumber(){
         Book testBook = new Book();
         testBook.setRefNumber(654564654564L);
-        assertEquals(testBook.getRefNumber(),654564654564L,"another bad one");
+        assertEquals(654564654564L,testBook.getRefNumber(),"another bad one");
     }
 
     @Test
-    @DisplayName("Test to retrieve wrong book name")
-    public void testGetWrongBook(){
-        Book testBook = new Book();
-        testBook.setBookTitle("The Expanse");
-        assertEquals(testBook.getBookTitle(),"Leviathan Wakes","This is the wrong name");
+    @DisplayName("Testing adding a book with info")
+    public void testGetAndSet(){
+        Book testBook = new Book("10000 Leagues under the sea","H G Wells",543125646L);
+        assertEquals("10000 Leagues under the sea",testBook.getBookTitle(),"This is not the right name");
+        assertEquals("H G Wells",testBook.getAuthor(),"this is not the author");
+        assertEquals(543125646L,testBook.getRefNumber(),"This is not the reference number");
+
     }
+
+
 }

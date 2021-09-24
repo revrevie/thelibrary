@@ -1,5 +1,7 @@
 package librarysystem;
 
+import java.util.ArrayList;
+
 public class Book {
 
     /////Attributes
@@ -17,6 +19,10 @@ public class Book {
         this.refNumber = refNumber;
     }
 
+    public Book() {
+
+    }
+/*
     public Book(String bookTitle) {
         this.bookTitle = bookTitle;
     }
@@ -29,6 +35,8 @@ public class Book {
     public Book() {
 
     }
+*/
+
 
 
     /////Methods
