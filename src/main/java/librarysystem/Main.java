@@ -11,12 +11,12 @@ public class Main {
         listOfBooks = new ArrayList<>();
         Scanner key = new Scanner(System.in);
         for (; true; ) {
-            System.out.println("To add a new book to the system press 1. To remove a book from the system press 2.");
+            System.out.println("To add a new book to the system press 1. To remove a book from the system press 2. To view information on a book, select 3.");
             int decide = key.nextInt();
             switch (decide) {
                 case 1 -> addBook();
                 case 2 -> removeBook();
-                //case 3 ->
+                case 3 ->   getBookInfo();
                 default -> System.out.println("Come on man, there were only 2 choices.");
             }
             System.out.println("The current list of books is: " + listOfBooks);
@@ -58,7 +58,7 @@ public class Main {
         Book book = new Book();
         System.out.println("The available list of books are: " + listOfBooks);
         System.out.println("What book are you wanting information on?");
-        System.out.println(listOfBooks.equals(author.next()));
+        listOfBooks.get(Integer.parseInt(author.nextLine()));
     }
 
 }

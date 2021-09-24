@@ -1,2 +1,4 @@
-package librarysystem;public interface Series {
+package librarysystem;
+
+public interface Series {
 }

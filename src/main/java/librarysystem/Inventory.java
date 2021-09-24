@@ -1,2 +1,5 @@
-package librarysystem;public class Inventory {
+package librarysystem;
+
+public abstract class Inventory {
+
 }
