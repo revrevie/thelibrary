@@ -1,0 +1,7 @@
+-------------------------------------------------------------------------------
+Test set: librarysystem.CucumberTest
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0.017 s <<< FAILURE! - in librarysystem.CucumberTest
+initializationError  Time elapsed: 0.001 s  <<< ERROR!
+java.lang.IllegalArgumentException: path must exist: D:\JAVA\thelibrary\src\test\java\resources\features
+

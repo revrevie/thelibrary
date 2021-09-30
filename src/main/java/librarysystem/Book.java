@@ -3,7 +3,7 @@ package librarysystem;
 import java.util.ArrayList;
 
 public class Book {
-    //comment time
+
     /////Attributes
 
 
@@ -20,22 +20,7 @@ public class Book {
     }
 
     public Book() {
-
     }
-/*
-    public Book(String bookTitle) {
-        this.bookTitle = bookTitle;
-    }
-
-    public Book(String bookTitle, String author) {
-        this.bookTitle = bookTitle;
-        this.author = author;
-    }
-
-    public Book() {
-
-    }
-*/
 
 
 
